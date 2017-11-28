@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title> Time of the day </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script type="text/javascript">
+      document.write("<p>");
+      var day = new Date();
+      var hr = day.getHours();
+      var dow = day.getDay()
+
+      if (dow >= 1 && dow <= 6) {
+        if (hr >=0 && hr <2) {
+          document.write("<b><h2>Les méchants font leurs after à la Dernière Chance! Attention a vous!</h2></b>");
+        }
+        if (hr >=2 && hr <5) {
+          document.write("<b><h2>Les méchants sont en boite pour essayer de pécho!</h2></b>");
+        }
+        if (hr >=5 && hr <7) {
+          document.write("<b><h2>Les méchants rôdent pour finir leur nuit</h2></b>");
+        }
+        if (hr >=7 && hr <=21) {
+          document.write("<b><h2>Les méchants dorment! Mais soyez prudent quand même...</h2></b>");
+        }
+        if (hr >=21 && hr <22) {
+          document.write("<b><h2>Attention les méchants sont de sortie!</h2></b>");
+        }
+        if (hr >=22 && hr <=23) {
+          document.write("<b><h2>Les méchants sont au quai de la Daurade! Restez loin de l'eau!</h2></b>");
+        }
+
+      }
+      if (dow = 7 ) {
+        if (hr >=0 && hr <2) {
+          document.write("<b><h2>Les méchants font leurs after à la Dernière Chance! Attention a vous!</h2></b>");
+        }
+        if (hr >=2 && hr <5) {
+          document.write("<b><h2>Les méchants sont en boite pour essayer de pécho</h2></b>");
+        }
+        if (hr >=5 && hr <7) {
+          document.write("<b><h2>Les méchants rodent pour finir leur nuit</h2></b>");
+        }
+        if (hr >=7 && hr <=14) {
+          document.write("<b><h2>Les méchants dorment! Mais soyez prudent quand même...</h2></b>");
+        }
+        if (hr >=14 && hr <21) {
+          document.write("<b><h2>Les méchants ne sont pas très actifs, ils prennent leur gouter au bar à narguilé</h2></b>");
+        }
+        if (hr >=22 && hr <=23) {
+          document.write("<b><h2>Les méchants sont de sortie pour leur grande soirée! Attention dans le métro!</h2></b>");
+        }
+      }
+      if (dow = 0 ) {
+        if (hr >=0 && hr <2) {
+          document.write("<b><h2>Les méchants sont aux bains douches! Attention a vos fesses!</h2></b>");
+        }
+        if (hr >=2 && hr <5) {
+          document.write("<b><h2>Les méchants sont un peu désespérés mais essaie quand même!</h2></b>");
+        }
+        if (hr >=5 && hr <7) {
+          document.write("<b><h2>Les méchants rôdent pour finir leur nuit</h2></b>");
+        }
+        if (hr >=7 && hr <10) {
+          document.write("<b><h2>Les méchants dorment! Mais soyez prudent quand même...</h2></b>");
+        }
+        if (hr >=10 && hr <14) {
+          document.write("<b><h2>Les méchants font leur marché. Ils sont gentils quand ils font leur marché! C'est pour leurs brunch.</h2></b>");
+        }
+        if (hr >=14 && hr <21) {
+          document.write("<b><h2>Les méchants ne sont pas très actifs, ils sont à la piscine ou à la patinoire.</h2></b>");
+        }
+        if (hr >=22 && hr <=23) {
+          document.write("<b><h2>Les méchants sont de sortie même le dimanche soir!</h2></b>");
+        }
+      }
+      document.write("</p>");
+    </script>
+
+</head>
+<body>
+</body>
+</html>
